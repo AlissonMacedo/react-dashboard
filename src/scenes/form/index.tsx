@@ -32,9 +32,6 @@ const checkoutSchema = yup.object().shape({
 const Form = () => {
   const isNonMobile = useMediaQuery("(min-width:600px)")
 
-
-
-
   const initialValues = {
     firstName: '',
     lastName: '',
@@ -46,6 +43,7 @@ const Form = () => {
   const handleSubmit = (values: IInitialValues) => {
     console.log('values', values)
   }
+
   return (
     <Box m="20px">
       <Header title="CREATE USER" subTitle='Create a New User Profile' />
