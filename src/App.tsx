@@ -9,10 +9,10 @@ import Team from './scenes/team';
 import Contact from './scenes/contact';
 import Invoices from './scenes/invoices';
 import Calendar from './scenes/calendar';
+import Faq from './scenes/faq';
 
 function App() {
   const [theme, colorMode] = useMode()
-
 
   return (
     <ColorModeContext.Provider value={colorMode as any}>
@@ -29,6 +29,7 @@ function App() {
                 <Route path="/contacts" element={<Contact />} />
                 <Route path="/invoices" element={<Invoices />} />
                 <Route path="/calendar" element={<Calendar />} />
+                <Route path="/faq" element={<Faq />} /> 
               </Routes>
             </main>
           </div>
